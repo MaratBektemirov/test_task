@@ -1,8 +1,8 @@
-Для запуска:
-- npm install
-- Запустить файл run.js, либо создать js файл для запуска
-```js
-const { writeCities } = require('./index');
+npm install MaratIldarovich/test_task
 
-writeCities(listFilePath, country, outPath)
+API:
+```js
+const cities = require('cities');
+
+cities.writeGeoJsons('./cities.txt', 'ru', './out')
 ```

@@ -1,3 +1,3 @@
-const { writeCities } = require('./index');
+const cities = require('./index');
 
-writeCities('./cities.txt', 'ru', './out');
+cities.writeGeoJsons('./cities.txt', 'ru', './out');

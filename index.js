@@ -14,7 +14,7 @@ async function getDataForCounty(county, countryCode) {
     return resp.data.find((v) => v.type === 'administrative' && v.place_rank === 12);
 }
 
-async function writeCities(listFilePath, country, outPath) {
+async function writeGeoJsons(listFilePath, country, outPath) {
     await fs.rmdir(path.resolve(outPath), { recursive: true });
     await fs.mkdir(path.resolve(outPath));
 
@@ -80,5 +80,5 @@ async function writeCities(listFilePath, country, outPath) {
 }
 
 module.exports = {
-    writeCities,
+    writeGeoJsons,
 }
